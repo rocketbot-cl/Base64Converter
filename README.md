@@ -1,28 +1,17 @@
-# Text2PDF
-Module to convert plain text to PDF.
+# Base64Converter
+Module to encode and decode files in base64.
 
 ## Commands
 <ul class="commands_readme">
-    <li>Open TXT</li>
-    <li>Set Font</li>
-    <li>Save PDF</li>
+    <li>Encode</li>
+    <li>Decode</li>
+
 </ul>
 
-**In the example robot, its converts a .txt file to PDF using fonts styles.
+**In the example robot, its encode a image to base64 and then decode to png.
 
-![alt text](https://i.imgur.com/53rMzr9.png)
+![alt text](https://i.imgur.com/amkC3If.png)
 
-
-<h2>Dependencies</h2>
-
-<ul>
-  <li>
-    <strong>
-      <a href="https://github.com/alexanderankin/pyfpdf">pyfpdf</a>
-    </strong> 
-  </li>  
-</ul>  
-<ul>
 
 <h2>License</h2>
 
