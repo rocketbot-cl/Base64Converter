@@ -50,13 +50,14 @@ if module == "encode":
 if module == "decode":
     base64_text = GetParams("base64_text")
     path_file = GetParams("path_file")
+    type_decode = GetParams("type_decode")
     if not base64_text:
         raise Exception("No se cargo la variable o texto")
     if not path_file:
         raise Exception("No se cargo el archivo")
     try:
-        base64_text = eval(base64_text)
-        decode_to_base64(path_file, base64_text)
+        base64_text = base64_text
+        decode_to_base64(path_file, base64_text, type_decode)
     except Exception as e:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
