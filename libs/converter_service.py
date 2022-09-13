@@ -4,7 +4,7 @@ import base64
 def encode_to_base64(path_file):
     with open(path_file, "rb") as file:
         base64_text = base64.b64encode(file.read())
-        return base64_text
+        return base64_text.decode()
 
 
 def decode_to_base64(path_file, base64_text, type_decode):
