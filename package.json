@@ -2,9 +2,9 @@
   "author": "Nicolas Liendro",
   "description": "Encode and decode any file to base64",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "0.2",
+  "version": "1.2.1",
   "license": "MIT",
-  "homepage": "http://rocketbot.co/",
+  "homepage": "http://rocketbot.com/",
   "linux": true,
   "windows": true,
   "mac": true,
@@ -44,6 +44,10 @@
               "es": "Ruta archivo:",
               "en": "Path to file: "
             },
+            "description": {
+              "es": "Ruta al archivo a codificar",
+              "en": "Path to file to encode"
+            },
             "id": "path_file",
             "css": "col-md-12"
           },
@@ -53,6 +57,10 @@
             "title": {
               "es": "Asignar resultado a una variable",
               "en": "Set result to a variable"
+            },
+            "description": {
+              "es": "Variable donde se guardará el resultado",
+              "en": "Variable where the result will be saved"
             },
             "help": {
               "es": "Variable sin {}",
@@ -97,11 +105,15 @@
             "placeholder": "var",
             "title": {
               "es": "Texto o variable en base64",
-              "en": "Text or variable in bas64"
+              "en": "Text or variable in base64"
             },
             "help": {
               "es": "En caso de usar una variable, usar con {}",
               "en": "If using a variable, use with {}"
+            },
+            "description": {
+              "es": "Texto o variable que se desea decodificar en base64",
+              "en": "Text or variable to be decoded in base64"
             },
             "id": "base64_text",
             "css": "col-md-12"
@@ -109,12 +121,16 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "utf-8",
+              "en": "utf-8"
             },
             "title": {
               "es": "Tipo de decodificacion",
               "en": "Decode type"
+            },
+            "description": {
+              "es": "Tipo de decodificacion a realizar",
+              "en": "Decode type to perform"
             },
             "options": [
               {
@@ -143,6 +159,10 @@
             "title": {
               "es": "Ruta de destino:",
               "en": "Destination path:"
+            },
+            "description": {
+              "es": "Ruta donde se guardara el archivo decodificado",
+              "en": "Path where the decoded file will be saved"
             },
             "id": "path_file",
             "css": "col-md-12"
