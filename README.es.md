@@ -4,20 +4,20 @@ Encode and decode any file to base64
 
 *Read this in other languages: [English](README.md), [Español](README.es.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
 
 
 
 ## Overview
 
 
-1. Encode file  
-Encode a file to base64
+1. Codificar archivo  
+Codifica un archivo a base64
 
-2. Decode base64  
-Decode a file in base64  
+2. Decodificar base64  
+Decodifica un archivo en base64  
 
 
 
