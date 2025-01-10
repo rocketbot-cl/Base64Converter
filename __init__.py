@@ -48,6 +48,13 @@ if module == "encode":
         raise e
 
 if module == "decode":
+
+    def check_padding(base64_text):
+        return len(base64_text) % 4 == 0
+
+    def add_padding(base64_text):
+        return base64_text + "=" * (4 - len(base64_text) % 4)
+
     base64_text = GetParams("base64_text")
     path_file = GetParams("path_file")
     type_decode = GetParams("type_decode")
@@ -56,7 +63,10 @@ if module == "decode":
     if not path_file:
         raise Exception("No se cargo el archivo")
     try:
-        base64_text = base64_text
+
+        if not check_padding(base64_text):
+            base64_text = add_padding(base64_text) # in case the base64 text is not padded with '=' characters at the end of the string (required by the base64.b64decode function)
+
         decode_to_base64(path_file, base64_text, type_decode)
     except Exception as e:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
